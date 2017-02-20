@@ -1,6 +1,9 @@
-const Project = require('./model');
+const Project = require('./model')
 
-const project1 = new Project();
+const project1 = {} //coloque aqui os dados do Project
 
-console.log(project1);
-//{ _id: 58aab3e9bf4343703783715d }
+
+const success = ( data ) => console.log('data', data)
+const error = ( error ) => console.log('error', error)
+
+Project.create(project1).exec().then( success ).catch( error )
