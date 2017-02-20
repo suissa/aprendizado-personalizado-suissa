@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+const mongoose = require('mongoose')
+mongoose.connect('mongodb://localhost/test')
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema
 
 const __projectSchema = new Schema({
 	nomeProjeto: String,
@@ -10,6 +10,6 @@ const __projectSchema = new Schema({
 	conteudo: String,
 });
 
-const Project = mongoose.model('Project', __projectSchema);
+const Project = mongoose.model('Project', __projectSchema)
 
-module.exports = Project;
+module.exports = Project
