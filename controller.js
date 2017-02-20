@@ -14,3 +14,5 @@ const create = ( obj ) => {
 Project.create(project1).then( success ).catch( error )
 
 const Controller = {create}
+
+module.exports = Controller
